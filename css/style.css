@@ -447,17 +447,17 @@ section_e_2
 }
 
 /*-----------------------
-section_f
+section_f カード3枚
 ------------------------*/
 .section_f{
   width:100%;
-  max-width:1200px;
   background-color:#fff;
   margin:0 auto;
   display:inline-block;
 }
 
 .section_f__inner{
+  /* max-width: 1200px; */
   display:flex;
   flex-wrap:wrap;
   justify-content:space-around;
@@ -472,11 +472,17 @@ section_f
   height:220px;
   background-color:lightgray;
   object-fit:cover;
-  display:block;
-  background-image:url('./images/card1.jpg');
+  /* display:block; */
 }
+
 .section_f-inner__r-column img{
-  width:300px;
+  width:250px;
+  object-fit:fixed;
+}
+.car_no1{
+  text-align:center;
+  margin:0 auto;
+  display:inline-block;
 }
 
 .section_f-inner__c-column{
@@ -484,12 +490,19 @@ section_f
   height:220px;
   background-color:lightgray;
   display:block;
-
 }
+
 .section_f-inner__c-column img{
-  object-fit:none;
+  /* object-fit:none; */
   display:block;
-  width:300px;
+  object-fit: cover;
+  width:250px;
+}
+
+.car_no2 {
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
 }
 
 .section_f-inner__l-column{
@@ -499,12 +512,15 @@ section_f
   object-fit:cover;
   display:block;
 }
+
 .section_f-inner__l-column img{
-  width:300px;
+  width:250px;
 }
-.section_f-inner__l-column p{
-  text-align:center;
-  /* margin:0 auto; */
+
+.car_no3{
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
 }
 
 /*-----------------------
@@ -878,7 +894,7 @@ section_q　CONTACT コンタクト
   background-color:#fff;
   display:block;
   text-align:center;
-  background-image:url("../images/IMG_6834.jpg");
+  background-image:url("../images/JB.JPG");
   background-repeat:no-repeat;
   background-position:center center;
   background-size:fixed;
