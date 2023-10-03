@@ -24,37 +24,44 @@
 <!----------------------
   ヘッダー
 ------------------------>
-<!-- <div class="header" id="header">
+<header id="header">
   <div class="header__inner">
-    <img src="./images/Pool-logo.png">
-    <div class="g-nav">
+    <a href="#"><img src="./images/Pixel Art.jpg" style="width:50px; color:#fff;"></a>
+    <nav>
+      <ul id="g-nav">
+        <li><a href="#1">ABOUT</a></li>
+        <li><a href="#2">PRICE</a></li>
+        <li><a href="#3">ACCESS</a></li>
+        <li><a href="#4">CONTACT</a></li>
+      </ul>
+    </nav>
 
-          <ul id="g-nav">
-            <li>ABOUT</li>
-            <li>PRICE</li>
-            <li>ACCESS</li>
-            <li>CONTACT</li>
+    <div id="navArea">
+      <nav>
+        <div class="inner">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Detail</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
-
         </div>
-      </div>
-    </div> -->
+      </nav>
 
-
-    <header id="header">
-      <div class="header__inner">
-        <a href="#"><img src="./images/Pixel Art.jpg" style="width:50px; color:#fff;"></a>
-        <!-- <div class="openbtn"><span></span><span></span><span></span></div> -->
-        <nav>
-          <ul id="g-nav">
-            <li><a href="#1">ABOUT</a></li>
-            <li><a href="#2">PRICE</a></li>
-            <li><a href="#3">ACCESS</a></li>
-            <li><a href="#4">CONTACT</a></li>
-          </ul>
-        </nav>
+      <div class="toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </header>
+
+      <div id="mask"></div>
+    </div>
+
+    <main>
+      <h1>Hamburger Menu Youtube</h1>
+    </main>
+
+  </div>
+</header>
 
 <!-------------------------
 セクション_a ヒーローイメージ
@@ -148,7 +155,7 @@ section_c_plus_ビューアー
   </div>
 
 <!-------------------
-  セクション_f 写真カード
+section_f  車　写真３枚カード
 ------------------------>
   <div class="section_f">
     <div class="section_f__inner">
@@ -168,17 +175,17 @@ section_c_plus_ビューアー
   </div>
 
 <!----------------------
-  セクション_g
+  セクション_g　注釈
 ------------------------>
-  <div class="section_g">
-    <div class="section_g__inner">
-      <p>海老名駅からも徒歩圏内<br>
+<div class="section_g">
+  <div class="section_g__inner">
+    <p>海老名駅からも徒歩圏内<br>
       目の前にはららぽーともあるガラス張りで、室内は白を基調としたソリッドな空間<br>
       シェアオフィス、技術交流や、ITワークショップの場として、<br>
       あなたが願うワークスタイルで、あなただけの空間をつくって下さい。<br>
       ご連絡をお待ちしています。</p>
-    </div>
   </div>
+</div>
 
 <!-----------------------
   セクション_h PRICE
@@ -190,7 +197,7 @@ section_c_plus_ビューアー
   </div>
 
 <!----------------------
-  セクション_i_n
+  セクション_i_n　利用料金
 ------------------------>
 
 <div class="section_i_n">
@@ -222,9 +229,8 @@ section_c_plus_ビューアー
 </div>
 
 <!-------------------
-  セクション_j_new キャンセル料金
+section_j_new  キャンセル料金
 ------------------------>
-
 <div class="section_j_new">
   <div class="section_j_new__inner">
     <h3>[キャンセル料金]</h3>
@@ -248,7 +254,7 @@ section_c_plus_ビューアー
 </div>
 
 <!-------------------
-  セクション_j 利用案内
+section_j セクション_j 利用案内
 ------------------------>
 <div class="section_j">
   <div class="section_j__inner">
@@ -258,7 +264,7 @@ section_c_plus_ビューアー
   </div>
 </div>
 <!-------------------
-  セクション_k 利用案内
+section_k セクション_k 利用案内
 ------------------------>
   <div class="section_k">
     <div class="section_k__inner">
@@ -344,26 +350,12 @@ section_c_plus_ビューアー
       <!-- <h2>CONTACT</h2> -->
           <div class="section_q__inner_middle_column">
             <a href="tel:080-xxxx-xxxx">
-            <button class="l-column__btn ">
-              <div class="l-column__button">
-                <!-- <img src="./images/img-btn-2.png"> -->
-                <div>
-                  お電話でのご相談はこちら<br>
-                  <span>080-XXXX-XXXX</span>
-                </div>
-              </div>
-            </button>
+              <button class="btn">お問い合わせ</button>
+
             </a>
             <a href="mailto:cooinc.studio@gmail.com">
-            <button class="r-column__btn">
-              <div class="r-column__button">
-                <!-- <img src="./images/img-btn-2.png"> -->
-                <div>
-                  メールでのお問い合わせはこちら<br>
-                  <span>dna4570@gmail.com</span>
-                </div>
-              </div>
-            </button>
+              <button class="btn">お問い合わせ</button>
+
             </a>
           </div>
 
@@ -377,10 +369,12 @@ section_c_plus_ビューアー
 <!-------------------
 footer_q
 ------------------------>
-  <footer class="footer">
-    <div class="footer__inner">
-      <p><small>Copyright© &copy L-sunsui All right reserved</small></p>
-      <!-- <p id="page-top"><a href="#">Page Top</a></p> -->
+<footer class="footer">
+  <div class="footer__inner">
+    <p>
+      <small>Copyright© &copy L-sunsui All right reserved</small>
+    </p>
+      <a id="go_top" href="#">上に戻る</a>
       <!-- <p class="footer-pagetop"><a href="#top">ページの先頭へ戻る</a></p> -->
     </div>
 
@@ -394,18 +388,11 @@ footer_q
 
 
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
-
 </script>
-
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="./js/main.js"></script>
-<script src="./js/script.js"></script>
-<script src="./js/scroll.js"></script>
-<script src="./js/swiper.js"></script>
-<script src="./js/8-1-1.js"></script>
-<script src="./js/8-1-2.js"></script>
 <script src="./js/viewer.js"></script>
-
+<script src="./js/script.js"></script>
 </body>
 </html>
